@@ -1,0 +1,26 @@
+import React from 'react';
+import allDatas from '../../data/allData';
+import { useParams } from 'react-router-dom';
+
+function ProductScreen() {
+  const { id } = useParams();
+
+  const product = allDatas.find((p) => p._id === id);
+
+  if (!product) {
+    return <h2>Товар не найден</h2>;
+  }
+
+  return (
+    <>
+      <div key={product._id}>
+        <h1>{product.name}</h1>
+        <img src={product.image} alt={product.name} />
+        <p>{product.description}</p>
+        <p>Цена: {product.price}</p>
+      </div>
+    </>
+  );
+}
+
+export default ProductScreen;

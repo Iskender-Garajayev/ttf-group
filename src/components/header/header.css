@@ -1,0 +1,13 @@
+.header-navbar ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px black solid; */
+
+}
+
+.header-navbar{
+    width: 60%;
+}
