@@ -11,15 +11,24 @@ const Sedan = () => {
   return (
     <>
       <Header />
-      {sedan.map((item) => (
-        <Link to={`/item/${item._id}`} key={item._id}>
-          <div>
-            <h1>{item.name}</h1>
-            <img src={item.image} alt={item.name} />
-            <h2>{item.price}</h2>
+      <div className="main">
+        <div className="main-inner">
+          <div className="card-box">
+            {sedan.map((item) => (
+              <div className="card">
+                <Link to={`/item/${item._id}`} key={item._id}>
+                  <div className="card-img">
+                    <img src={item.image} alt={item.name} />
+                  </div>
+                </Link>
+                <div className="card-title">
+                  <h2>{item.name}</h2>
+                </div>
+              </div>
+            ))}
           </div>
-        </Link>
-      ))}
+        </div>
+      </div>
     </>
   );
 };

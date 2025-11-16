@@ -19,7 +19,7 @@ const Home = () => {
         <div className="main-inner">
           <div className="card-box">
             {selectedProducts.map((item) => (
-              <>
+              <div className="card">
                 <Link to={`/item/${item._id}`} key={item._id}>
                   <div className="card-img">
                     <img src={item.image} alt={item.name} />
@@ -28,7 +28,7 @@ const Home = () => {
                 <div className="card-title">
                   <h2>{item.name}</h2>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </div>

@@ -11,14 +11,25 @@ const Pricep = () => {
   return (
     <>
       <Header />
-      {pricep.map((item) => (
-        <Link to={`/item/${item._id}`} key={item._id}>
-          <div>
-            <h1>{item.name}</h1>
-            <img src={item.image} alt={item.name} />
+
+      <div className="main">
+        <div className="main-inner">
+          <div className="card-box">
+            {pricep.map((item) => (
+              <div className="card">
+                <Link to={`/item/${item._id}`} key={item._id}>
+                  <div className="card-img">
+                    <img src={item.image} alt={item.name} />
+                  </div>
+                </Link>
+                <div className="card-title">
+                  <h2>{item.name}</h2>
+                </div>
+              </div>
+            ))}
           </div>
-        </Link>
-      ))}
+        </div>
+      </div>
     </>
   );
 };

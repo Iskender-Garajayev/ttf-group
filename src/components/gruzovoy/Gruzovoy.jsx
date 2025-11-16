@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import allDatas from '../../data/allData';
 import Header from '../header/Header';
-import './gruzovoy.css';
 
 const Gruzovoy = () => {
   const { category } = useParams();
@@ -17,7 +16,7 @@ const Gruzovoy = () => {
         <div className="main-inner">
           <div className="card-box">
             {gruzovoy.map((item) => (
-              <>
+              <div className="card">
                 <Link to={`/item/${item._id}`} key={item._id}>
                   <div className="card-img">
                     <img src={item.image} alt={item.name} />
@@ -26,7 +25,7 @@ const Gruzovoy = () => {
                 <div className="card-title">
                   <h2>{item.name}</h2>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </div>
