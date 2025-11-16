@@ -21,3 +21,29 @@
   border-radius: 30px;
 }
 
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-inner {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: black;
+}
+
+.card-box {
+  width: 300px;
+  height: 500px;
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+}

@@ -54,8 +54,7 @@ const allDatas = [
   },
   {
     _id: '4',
-    image:
-      'https://cdn.pixabay.com/photo/2017/11/26/15/35/dare-2979158_1280.png',
+    image: 'https://sc04.alicdn.com/kf/HTB1jT8jmsjI8KJjSsppq6xbyVXaM.jpg',
     name: 'Прицепы',
     description:
       'PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.',
@@ -73,7 +72,7 @@ const allDatas = [
   {
     _id: '5',
     image:
-      'https://cdn.pixabay.com/photo/2020/05/31/10/06/sailing-5242101_1280.jpg',
+      'https://lodki-lodki.ru/images/product_images/popup_images/3731_ZTxz.jpg',
     name: 'Лодки',
     description:
       'PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.',
@@ -81,6 +80,24 @@ const allDatas = [
     rating: 4.5,
     section: '1',
     category: 'lodka',
+    color: ['red', 'white'],
+    year: '2025',
+    transmission: 'механическая, автоматическая',
+    fuel_type: 'бензин, электро, дизель, гибрид',
+    fuel: '6-7 ',
+    stock: 234,
+  },
+  {
+    _id: '6',
+    image: '../img/12.jpg',
+    image_1: '../img/121.png',
+    name: 'Lada Largus 7 мест',
+    description:
+      'PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.',
+    price: '$120',
+    rating: 4.5,
+    section: '1',
+    category: 'gruzovoy',
     color: ['red', 'white'],
     year: '2025',
     transmission: 'механическая, автоматическая',
