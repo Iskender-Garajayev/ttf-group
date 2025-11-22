@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../header/Header';
-import Footer from '../footer/Footer';
+// import Footer from '../footer/Footer';
 import allDatas from '../../data/allData';
 import { Link } from 'react-router-dom';
 
@@ -34,7 +34,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
