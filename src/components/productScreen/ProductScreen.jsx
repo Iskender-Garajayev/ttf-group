@@ -1,6 +1,7 @@
 import React from 'react';
 import allDatas from '../../data/allData';
 import { useParams } from 'react-router-dom';
+import Header from '../header/Header';
 
 function ProductScreen() {
   const { id } = useParams();
@@ -13,6 +14,7 @@ function ProductScreen() {
 
   return (
     <>
+      <Header />
       <div key={product._id}>
         <h1>{product.name}</h1>
         <img src={product.image} alt={product.name} />
