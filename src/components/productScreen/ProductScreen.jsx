@@ -15,11 +15,13 @@ function ProductScreen() {
   return (
     <>
       <Header />
-      <div key={product._id}>
-        <h1>{product.name}</h1>
-        <img src={product.images.img} alt={product.model} />
-        <p>{product.description}</p>
-        <p>Цена: {product.price}</p>
+      <div className="main">
+        <div key={product._id}>
+          <h1>{product.name}</h1>
+          <img src={product.images.img} alt={product.model} />
+          <p>{product.description}</p>
+          <p>Цена: {product.price}</p>
+        </div>
       </div>
     </>
   );
