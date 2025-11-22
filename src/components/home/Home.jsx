@@ -5,7 +5,7 @@ import allDatas from '../../data/allData';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const needIds = ['2', '4', '5', '1'];
+  const needIds = ['2', '4', '5', '1', '3'];
 
   const selectedProducts = allDatas.filter((item) =>
     needIds.includes(item._id)
@@ -22,11 +22,11 @@ const Home = () => {
               <div className="card">
                 <Link to={`/item/${item._id}`} key={item._id}>
                   <div className="card-img">
-                    <img src={item.image} alt={item.name} />
+                    <img src={item.images.img} alt={item.model} />
                   </div>
                 </Link>
                 <div className="card-title">
-                  <h2>{item.name}</h2>
+                  <h2>{item.model}</h2>
                 </div>
               </div>
             ))}
@@ -40,25 +40,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// const Sedan = () => {
-//   const needIds = ['2', '5', '7'];
-
-//   const selectedProducts = allDatas.filter((item) =>
-//     needIds.includes(item._id)
-//   );
-
-//   return (
-//     <>
-//       {selectedProducts.map((item) => (
-//         <Link to={`/avto/${item._id}`} key={item._id}>
-//           <div>
-//             <h1>{item.name}</h1>
-//             <img src={item.image} alt={item.name} />
-//             <h2>{item.price}</h2>
-//           </div>
-//         </Link>
-//       ))}
-//     </>
-//   );
-// };

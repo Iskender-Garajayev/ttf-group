@@ -19,11 +19,11 @@ const Gruzovoy = () => {
               <div className="card">
                 <Link to={`/item/${item._id}`} key={item._id}>
                   <div className="card-img">
-                    <img src={item.image} alt={item.name} />
+                    <img src={item.images.img} alt={item.model} />
                   </div>
                 </Link>
                 <div className="card-title">
-                  <h2>{item.name}</h2>
+                  <h2>{item.model}</h2>
                 </div>
               </div>
             ))}

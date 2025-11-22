@@ -17,7 +17,7 @@ function ProductScreen() {
       <Header />
       <div key={product._id}>
         <h1>{product.name}</h1>
-        <img src={product.image} alt={product.name} />
+        <img src={product.images.img} alt={product.model} />
         <p>{product.description}</p>
         <p>Цена: {product.price}</p>
       </div>
