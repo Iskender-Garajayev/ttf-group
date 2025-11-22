@@ -41,6 +41,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Logo from '../../imgLogo/logo.png';
 // import { LinkContainer } from 'react-router-bootstrap';
 // import { Link } from 'react-router-dom';
 
@@ -49,7 +50,9 @@ function Header() {
     <>
       <Navbar bg="light" expand="lg" data-bs-theme="light">
         <Container>
-          <Navbar.Brand href="/">Navbar</Navbar.Brand>
+          <Navbar.Brand className=" w-12 rounded-3xl" href="/">
+            <img src={Logo} alt="" />
+          </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
